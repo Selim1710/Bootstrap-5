@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>laravel api and vue</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+    <div id="app"></div>
+    <br><br>
+    <section>
+        <div class="container">
+            <div class="row gx-2">
+                <!-- badge with button -->
+                <div class="col-12">
+                    <h4 class="text-danger">1. Badge: </h4>
+                    <div class="btn-group">
+                        <button class="btn btn-primary position-relative">Notifications <span
+                                class="badge position-absolute bg-danger translate-middle rounded-pill top-0 strart-100">99+</span></button>
+                    </div>
+                </div>
+                <br><br>
+                <!-- floating form -->
+                <div class="col-12 mt-4">
+                    <h4 class="text-danger">2. Floating form: </h4>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" placeholder="Username">
+                        <label>User Name</label>
+                    </div>
+                </div>
+                <!-- Glutter -->
+                <div class="col-12 mt-4">
+                    <h4 class="text-danger">3. Glutter: </h4>
+
+                    <div class="row gx-5 gy-4">
+                        <div class="col-6">
+                            <div class="p-3 border bg-light">Custom column padding</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 border bg-light">Custom column padding</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 border bg-light">Custom column padding</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-3 border bg-light">Custom column padding</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- popover -->
+                <div class="col-12 mt-4">
+                    <h4 class="text-danger">4. Popover : </h4>
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-content="Disabled popover">
+                        <button class="btn btn-info" type="button" disabled>Popover</button>
+                    </span>
+                </div>
+                <br><br>
+                <!-- text truncate -->
+                <div class="col-12 mt-4">
+                    <h4 class="text-danger">5. Text truncate : </h4>
+                    <p class="text-truncate w-25">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cum, quis praesentium sunt
+                        aliquid facilis sit dolore quia veritatis distinctio amet voluptas. Ullam dolore consequatur,
+                        vitae fugiat nisi quia excepturi.
+                    </p>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- popover -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
